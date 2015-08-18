@@ -33,6 +33,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.7.4137.9688, Culture=neutral, PublicKeyToken=a4292a325f69b123, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.1.7.0\lib\Net40-Client\BouncyCastle.Crypto.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ENet, Version=1.3.6.3, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ENet.1.3.6.3\lib\ENet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -47,23 +59,41 @@
     <Compile Include="Logic\Game\Champions\Champs\Aatrox.cs" />
     <Compile Include="Logic\Game\Champions\Helpers\CastingResource.cs" />
     <Compile Include="Logic\Game\Champions\Helpers\SecondaryBar.cs" />
+    <Compile Include="Logic\Game\GameTypes\GameTypes.cs" />
     <Compile Include="Logic\Game\Items\BaseItem.cs" />
     <Compile Include="Logic\Game\Items\Helpers\UniquePassive.cs" />
     <Compile Include="Logic\Game\Items\GlobalData\BootsOfSpeed.cs" />
+    <Compile Include="Logic\Game\Maps\GameMap\BaseMap.cs" />
     <Compile Include="Logic\Game\Maps\MapTypes.cs" />
     <Compile Include="Logic\Game\Players\Player.cs" />
     <Compile Include="Logic\Game\Players\PlayerChamp.cs" />
+    <Compile Include="Logic\Game\Team\TeamEnum.cs" />
     <Compile Include="Logic\GlobalData.cs" />
+    <Compile Include="Logic\Json\PlayerInitJson.cs" />
+    <Compile Include="Logic\Server\Blowfish.cs" />
+    <Compile Include="Logic\Server\GameData\PacketEnum.cs" />
     <Compile Include="Logic\Server\GameInitializer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="libenet.dylib">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Exceptions\" />
     <Folder Include="Logic\Game\Towers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ENetX64.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ENetX86.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

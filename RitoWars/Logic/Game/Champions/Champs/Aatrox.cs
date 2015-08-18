@@ -131,12 +131,12 @@ namespace RitoWars.Logic.Game.Champions.Champs
         /// <summary>
         /// The champion's <seealso cref="CastingResource"/> for using E
         /// </summary>
-        public override CastingResource E => CastingResource.Health;
+        public override CastingResource E => CastingResource.NoCastingResource;
 
         /// <summary>
         /// The champion's <seealso cref="CastingResource"/> for using R
         /// </summary>
-        public override CastingResource R => CastingResource.Health;
+        public override CastingResource R => CastingResource.NoCastingResource;
         #endregion CastingResource
     }
 }

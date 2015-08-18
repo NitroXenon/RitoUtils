@@ -1,9 +1,15 @@
-﻿using RitoWars.Logic.Game.Champions.Helpers;
+﻿using System.Linq;
+using RitoWars.Logic.Game.Champions.Helpers;
+using System.Reflection;
 
 namespace RitoWars.Logic.Game.Champions
 {
     public abstract class BaseChamp
     {
+        public static BaseChamp GetFromId(int champId)
+        {
+            return GlobalData.GetInstances<BaseChamp>().FirstOrDefault(champ => champ.ChampId == champId);
+        }
 
         #region ChampData
         /// <summary>
