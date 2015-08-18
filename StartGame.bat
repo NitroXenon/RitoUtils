@@ -1,8 +1,4 @@
 @echo off
-setlocal enabledelayedexpansion
-echo -----------------------
-echo IntWars Solo Game
-echo -----------------------
 
 set RADS_PATH=
 echo ===================
