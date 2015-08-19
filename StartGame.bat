@@ -1,8 +1,8 @@
 @echo off
 setlocal enabledelayedexpansion
-echo -----------------------
-echo IntWars Solo Game
-echo -----------------------
+echo ----------------------------------------
+echo RitoWars Launcher, Intwars rewrite in c#
+echo ----------------------------------------
 
 set RADS_PATH=
 echo ===================

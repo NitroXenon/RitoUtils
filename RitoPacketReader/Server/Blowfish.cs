@@ -52,10 +52,10 @@ Use the same mode of operation for decryption.
  */
 
 using System;
-using System.Text;
 using System.Security.Cryptography;
+using System.Text;
 
-namespace RitoWars.Logic.Server
+namespace RitoPacketReader.Server
 {
     public class BlowFish
     {

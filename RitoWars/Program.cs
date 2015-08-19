@@ -86,6 +86,7 @@ namespace RitoWars
                 
                 //The server key.
                 "17BLOhi6KZsTtldTsizvHg==",
+                //"Z6zrBNmC42AhIC6UQR6KDg==",
 
                 
                 //Such wow

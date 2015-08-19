@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace RitoWars.Logic.Server.GameData
+﻿namespace RitoPacketReader.Server.GameData
 {
     enum GameCmd : uint
     {
@@ -94,7 +88,7 @@ namespace RitoWars.Logic.Server.GameData
         PKT_S2C_TurretSpawn = 0x9D,
         PKT_S2C_NPC_Hide = 0x9E, // (4.18) not sure what this became
 
-        PKT_C2S_Surrender = 0xA4,
+        PKT_C2S_Surrender = 0xa4,
         PKT_C2S_StatsConfirm = 0xA8,
         PKT_S2C_SetHealth = 0xAE,
         PKT_C2S_Click = 0xAF,

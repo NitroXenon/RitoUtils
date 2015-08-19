@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
@@ -42,13 +44,13 @@ namespace RitoWars.Logic.Server
                 });
             }
             Server = new UdpClient(ipEndPoint);
-            var key = Convert.ToBase64String(Encoding.UTF8.GetBytes(serverKey));
+            var key = Convert.ToBase64String(Encoding.ASCII.GetBytes(serverKey));
             if (key.Length <= 0){
 
                 Initialized = false;
                 return;
             }
-            BlowFish = new BlowFish(Encoding.UTF8.GetBytes(key));
+            BlowFish = new BlowFish(Encoding.ASCII.GetBytes(key));
         }
 
         public void Loader()
@@ -58,6 +60,24 @@ namespace RitoWars.Logic.Server
                 var endpoint = new IPEndPoint(IPAddress.Any, 0);
                 var bytes = Server.Receive(ref endpoint);
                 var decrypt = BlowFish.Decrypt_ECB(bytes);
+
+                foreach (var bytedata in decrypt.Skip(8))
+                {
+                    Console.Write("{0} ", bytedata);
+                    Debugger.Log(0, "DEBUG", $"{bytedata} ");
+                }
+
+                Console.Write(Environment.NewLine);
+                Debugger.Log(0, "DEBUG", Environment.NewLine + Environment.NewLine);
+                //*/
+                foreach (var bytedata in bytes.Skip(8))
+                {
+                    Console.Write("{0} ", bytedata);
+                    Debugger.Log(0, "DEBUG", $"{bytedata} ");
+                }
+
+                Console.Write(Environment.NewLine);
+                Debugger.Log(0, "DEBUG", Environment.NewLine + Environment.NewLine);
 
             }
         }
