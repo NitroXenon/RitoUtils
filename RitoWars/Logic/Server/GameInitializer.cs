@@ -1,21 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
-using ENet;
 using RitoWars.Logic.Game.Players;
 using RitoWars.Logic.Json;
 using RitoWars.Logic.Game.Champions;
+using RitoWars.Logic.Server.Packets;
 
 namespace RitoWars.Logic.Server
 {
     public class GameInitializer
     {
-        [Obsolete]
-        public Host Host;
 
         public UdpClient Server;
 
@@ -27,11 +24,11 @@ namespace RitoWars.Logic.Server
 
         public GameInitializer(IPEndPoint ipEndPoint, string serverKey, List<PlayerInitJson> teamBluePlayers, List<PlayerInitJson> teamRedPlayers)
         {
-            //My goal is to try to stay away from enet because it is not 100% c#
-            //Host = new Host();
-            //Host.Initialize(ipEndPoint, 32);
             _bluePlayers = teamBluePlayers;
             _redPlayers = teamRedPlayers;
+
+            Console.CancelKeyPress += ConsoleOnCancelKeyPress;
+           
             foreach (var basicPlayer in teamBluePlayers)
             {
                 GlobalData.TeamOnePlayers.Add(new Player {
@@ -53,33 +50,41 @@ namespace RitoWars.Logic.Server
             BlowFish = new BlowFish(Encoding.ASCII.GetBytes(key));
         }
 
+        private void ConsoleOnCancelKeyPress(object sender, ConsoleCancelEventArgs consoleCancelEventArgs)
+        {
+            //TODO: Use a method to ask players in game if they are okay if it is not finished
+            consoleCancelEventArgs.Cancel = true;
+        }
+
         public void Loader()
         {
+            Console.WriteLine("Server receive loop started");
             while (true) {
 
                 var endpoint = new IPEndPoint(IPAddress.Any, 0);
                 var bytes = Server.Receive(ref endpoint);
-                var decrypt = BlowFish.Decrypt_ECB(bytes);
+                var packetType = BasePacket.TryPrasePackets(bytes);
+                if (packetType != null)
+                    Console.WriteLine("Received packet type: {0}", packetType.GetType());
+                else
+                    Console.WriteLine("Unknown or encrypted packet type received");
+                //var decrypt = BlowFish.Decrypt_ECB(bytes);
 
-                foreach (var bytedata in decrypt.Skip(8))
+
+                if (packetType != null) continue;
+                Console.WriteLine("Unknown packet data: ");
+                    
+                Debugger.Log(0, "DEBUG", "Encrypted: ");
+                foreach (var bytedata in bytes)
                 {
                     Console.Write("{0} ", bytedata);
-                    Debugger.Log(0, "DEBUG", $"{bytedata} ");
+                    Debugger.Log(0, "DEBUG", $" {bytedata} ");
                 }
 
                 Console.Write(Environment.NewLine);
                 Debugger.Log(0, "DEBUG", Environment.NewLine + Environment.NewLine);
-                //*/
-                foreach (var bytedata in bytes.Skip(8))
-                {
-                    Console.Write("{0} ", bytedata);
-                    Debugger.Log(0, "DEBUG", $"{bytedata} ");
-                }
-
-                Console.Write(Environment.NewLine);
-                Debugger.Log(0, "DEBUG", Environment.NewLine + Environment.NewLine);
-
             }
+            // ReSharper disable once FunctionNeverReturns
         }
     }
 }

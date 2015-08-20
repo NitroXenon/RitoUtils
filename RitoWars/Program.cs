@@ -33,6 +33,7 @@ namespace RitoWars
                 Console.WriteLine("If you accept press 'Y' and if you do not, press 'N' to close the program");
                 Console.Write(">");
                 var key = Console.ReadKey(true);
+                Console.Write(key.KeyChar);
                 switch (key.Key)
                 {
                     case ConsoleKey.S:
@@ -64,6 +65,8 @@ namespace RitoWars
                 var teamTwo = JsonConvert.DeserializeObject<PlayerListJson>(args[4]);
                 var game = new GameInitializer(ipEndPoint, args[2], teamOne.Players, teamTwo.Players);
                 game.Loader();
+                Console.WriteLine("Game terminated by user. Press any key to exit...");
+                Console.ReadKey();
             }
             catch (Exception e)
             {
@@ -85,8 +88,8 @@ namespace RitoWars
                 "5119",
                 
                 //The server key.
-                "17BLOhi6KZsTtldTsizvHg==",
-                //"Z6zrBNmC42AhIC6UQR6KDg==",
+                //"17BLOhi6KZsTtldTsizvHg==",
+                "Z6zrBNmC42AhIC6UQR6KDg==",
 
                 
                 //Such wow

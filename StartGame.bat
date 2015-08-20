@@ -125,7 +125,7 @@ set lolver=!v0!.!v1!.!v2!.!v3!
 
 @cd /d "!RADS_PATH!\solutions\lol_game_client_sln\releases\!lolver!\deploy"
 if exist "League of Legends.exe" (
-	@start "" "League of Legends.exe" "8394" "LoLLauncher.exe" "" "127.0.0.1 5119 17BLOhi6KZsTtldTsizvHg== 1926758"
+	@start "" "League of Legends.exe" "8394" "LoLLauncher.exe" "" "127.0.0.1 5119 Z6zrBNmC42AhIC6UQR6KDg== 1926758"
 	goto exit
 )
 :cannotFind

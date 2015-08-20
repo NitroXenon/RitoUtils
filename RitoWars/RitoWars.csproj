@@ -73,6 +73,9 @@
     <Compile Include="Logic\Server\Blowfish.cs" />
     <Compile Include="Logic\Server\GameData\PacketEnum.cs" />
     <Compile Include="Logic\Server\GameInitializer.cs" />
+    <Compile Include="Logic\Server\Packets\BasePacket.cs" />
+    <Compile Include="Logic\Server\Packets\PacketData\ClientStartPacket.cs" />
+    <Compile Include="Logic\Server\Packets\PacketParser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -85,6 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Exceptions\" />
+    <Folder Include="Logic\Game\Chat\" />
     <Folder Include="Logic\Game\Towers\" />
   </ItemGroup>
   <ItemGroup>
