@@ -13,6 +13,10 @@ FOR /f "usebackq skip=2 tokens=3,4,5,6,7,8,9" %%i in (`%systemroot%\system32\REG
 	goto runApp
 )
 cls
+
+echo ----------------------------------------
+echo RitoWars Launcher, Intwars rewrite in c#
+echo ----------------------------------------
 echo ===================
 echo Finding other LoL directory path..
 echo ===================
@@ -21,6 +25,10 @@ FOR /f "usebackq skip=2 tokens=3,4,5,6,7,8,9" %%i in (`%systemroot%\system32\REG
 	goto runApp
 )
 cls
+
+echo ----------------------------------------
+echo RitoWars Launcher, Intwars rewrite in c#
+echo ----------------------------------------
 echo ===================
 echo Finding other LoL directory path..
 echo ===================
@@ -29,6 +37,10 @@ FOR /f "usebackq skip=2 tokens=3,4,5,6,7,8,9" %%i in (`%systemroot%\system32\REG
 	goto runApp
 )
 cls
+
+echo ----------------------------------------
+echo RitoWars Launcher, Intwars rewrite in c#
+echo ----------------------------------------
 echo ===================
 echo Finding other LoL directory path..
 echo ===================
@@ -37,6 +49,10 @@ FOR /f "usebackq skip=2 tokens=3,4,5,6,7,8,9" %%i in (`%systemroot%\system32\REG
 	goto runApp
 )
 cls
+
+echo ----------------------------------------
+echo RitoWars Launcher, Intwars rewrite in c#
+echo ----------------------------------------
 echo ===================
 echo Finding other LoL directory path..
 echo ===================
@@ -45,6 +61,10 @@ FOR /f "usebackq skip=2 tokens=3,4,5,6,7,8,9" %%i in (`%systemroot%\system32\REG
 	goto runApp
 )
 cls
+
+echo ----------------------------------------
+echo RitoWars Launcher, Intwars rewrite in c#
+echo ----------------------------------------
 echo ===================
 echo Finding other LoL directory path..
 echo ===================
@@ -53,6 +73,10 @@ FOR /f "usebackq skip=2 tokens=3,4,5,6,7,8,9" %%i in (`%systemroot%\system32\REG
 	goto runApp
 )
 cls
+
+echo ----------------------------------------
+echo RitoWars Launcher, Intwars rewrite in c#
+echo ----------------------------------------
 echo ===================
 echo Finding other LoL directory path..
 echo ===================
@@ -61,6 +85,10 @@ FOR /f "usebackq skip=2 tokens=3,4,5,6,7,8,9" %%i in (`%systemroot%\system32\REG
 	goto runApp
 )
 cls
+
+echo ----------------------------------------
+echo RitoWars Launcher, Intwars rewrite in c#
+echo ----------------------------------------
 echo ===================
 echo Finding other LoL directory path..
 echo ===================
@@ -69,6 +97,10 @@ for /f "Tokens=3,4,5,6,7,8,9,10,11,12,13,14,15" %%a in ('%systemroot%\system32\R
 	goto runApp
 )
 cls
+
+echo ----------------------------------------
+echo RitoWars Launcher, Intwars rewrite in c#
+echo ----------------------------------------
 echo ===================
 echo Finding another LoL directory path..
 echo ===================
@@ -77,6 +109,10 @@ for /f "Tokens=3,4,5,6,7,8,9,10,11,12,13,14,15" %%a in ('%systemroot%\system32\R
 	goto runApp
 )
 cls
+
+echo ----------------------------------------
+echo RitoWars Launcher, Intwars rewrite in c#
+echo ----------------------------------------
 echo ===================
 echo Finding another LoL directory path..
 echo ===================
@@ -85,6 +121,10 @@ for /f "Tokens=3,4,5,6,7,8,9,10,11,12,13,14,15" %%a in ('%systemroot%\system32\R
 	goto runApp
 )
 cls
+
+echo ----------------------------------------
+echo RitoWars Launcher, Intwars rewrite in c#
+echo ----------------------------------------
 echo ===================
 echo Finding another LoL directory path again..
 echo ===================
@@ -93,6 +133,10 @@ for /f "Tokens=3,4,5,6,7,8,9,10,11,12,13,14,15" %%a in ('%systemroot%\system32\R
 	goto runApp
 )
 cls
+
+echo ----------------------------------------
+echo RitoWars Launcher, Intwars rewrite in c#
+echo ----------------------------------------
 goto cannotFind
 :runApp
 set RADS_PATH=%RADS_PATH:/=\%
