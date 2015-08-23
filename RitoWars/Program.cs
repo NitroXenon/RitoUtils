@@ -88,8 +88,8 @@ namespace RitoWars
                 "5119",
                 
                 //The server key.
-                //"17BLOhi6KZsTtldTsizvHg==",
-                "Z6zrBNmC42AhIC6UQR6KDg==",
+                "17BLOhi6KZsTtldTsizvHg==",
+                //"Z6zrBNmC42AhIC6UQR6KDg==",
 
                 
                 //Such wow

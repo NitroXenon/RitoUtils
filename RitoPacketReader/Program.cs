@@ -14,13 +14,14 @@ namespace RitoPacketReader
 
         static string LauncherString(IEnumerable<string> args)
         {
-            var output = args.Aggregate(string.Empty, (current, input) => current + input + " ");
-            return output.Substring(0, output.Length - 1);
+            var output = args.Aggregate("\"", (current, s) => current + s + "\" \"");
+            return output.Substring(0, output.Length - 2);
         }
 
         static void Main(string[] args)
         {
             LaunchArgs = LauncherString(args);
+            Console.WriteLine(LaunchArgs);
             args = RitoArgs(args);
 
             if (args.Count() == 3)

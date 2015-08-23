@@ -63,11 +63,14 @@ namespace RitoWars.Logic.Server
 
                 var endpoint = new IPEndPoint(IPAddress.Any, 0);
                 var bytes = Server.Receive(ref endpoint);
-                var packetType = BasePacket.TryPrasePackets(bytes);
+                //var dec = BlowFish.Decrypt_ECB(bytes);
+                var packetType = PacketParser.TryPrasePackets(bytes);
+                var data = BitConverter.ToInt16(bytes, 0);
+                Console.WriteLine($"Got data: {data}");
                 if (packetType != null)
-                    Console.WriteLine("Received packet type: {0}", packetType.GetType());
+                    Console.WriteLine("Received packet type: {0}", packetType.GetClassName());
                 else
-                    Console.WriteLine("Unknown or encrypted packet type received");
+                    Console.WriteLine("Unknown or encrypted or uncompleted packet type received");
                 //var decrypt = BlowFish.Decrypt_ECB(bytes);
 
 
