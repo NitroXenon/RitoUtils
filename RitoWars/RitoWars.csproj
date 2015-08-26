@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exceptions\ServerNotInitializedException.cs" />
     <Compile Include="Logic\Game\Champions\BaseChamp.cs" />
     <Compile Include="Logic\Game\Champions\Champs\Aatrox.cs" />
     <Compile Include="Logic\Game\Champions\Helpers\CastingResource.cs" />
@@ -76,7 +77,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Exceptions\" />
     <Folder Include="Logic\Game\Chat\" />
     <Folder Include="Logic\Game\Towers\" />
   </ItemGroup>

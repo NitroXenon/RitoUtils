@@ -20,10 +20,13 @@ namespace RitoWars
         static void Main(string[] args)
         {
 #if DEBUG
+            //Allows me to load the program without adding it into the args launch
             args = DebugLoader();
 #endif
+            //Require them to accept the license or terminate the program
             while (true)
             {
+                //GPLv3 
                 Console.WriteLine("RitoWars  Copyright (C) 2015  eddy5641");
                 Console.WriteLine("This program comes with ABSOLUTELY NO WARRANTY; for details press 'w'.");
                 Console.WriteLine("This is free software, and you are welcome to redistribute it");
@@ -37,32 +40,42 @@ namespace RitoWars
                 switch (key.Key)
                 {
                     case ConsoleKey.S:
+                        //Show src
                         Process.Start("https://github.com/eddy5641/RitoWars");
                         break;
                     case ConsoleKey.W:
-                        Process.Start("http://www.gnu.org/licenses/gpl-3.0.en.html");
-                        break;
                     case ConsoleKey.C:
+                        //Show GPLv3 
                         Process.Start("http://www.gnu.org/licenses/gpl-3.0.en.html");
                         break;
                     case ConsoleKey.Y:
+                        //Continue on with program
                         goto PostLicense;
                     case ConsoleKey.N:
+                        //Close the program
                         Environment.Exit(0);
                         break;
                 }
             }
             PostLicense:
-            Console.WriteLine("");
-            Console.WriteLine("Starting");
+            //Just add some spacing
+            Console.Write(Environment.NewLine);
             try
             {
+                //Get the server ip
                 var serverIp = IPAddress.Parse(args[0]);
+                //Get the server port
                 var serverPort = Convert.ToInt32(args[1]);
+                //Notify what port server is starting on
+                Console.WriteLine("Starting server on port: {0}", serverPort);
+                //Create ipEndPoint to create udp server on
                 var ipEndPoint = new IPEndPoint(serverIp, serverPort);
 
+                //Convert team one json (blue)
                 var teamOne = JsonConvert.DeserializeObject<PlayerListJson>(args[3]);
+                //Convert team two json (purple)
                 var teamTwo = JsonConvert.DeserializeObject<PlayerListJson>(args[4]);
+                //Prepares the game to be started
                 var game = new GameInitializer(ipEndPoint, args[2], teamOne.Players, teamTwo.Players);
                 game.Loader();
                 Console.WriteLine("Game terminated by user. Press any key to exit...");
