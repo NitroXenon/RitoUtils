@@ -48,6 +48,12 @@
         IronMan,
 
         /// <summary>
+        /// Most champions secondarybar shows the amount of mana
+        /// <para>Example champ: Annie</para>
+        /// </summary>
+        Mana,
+
+        /// <summary>
         /// Champion does not have a secondarybar
         /// <para>Example champ: Riven</para>
         /// </summary>
