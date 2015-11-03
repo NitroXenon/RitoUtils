@@ -1,0 +1,9 @@
+C:\Users\Francisco Leal\Documents\GitHub\RitoWars\RitoWars\bin\Debug\RitoWars.exe.config
+C:\Users\Francisco Leal\Documents\GitHub\RitoWars-1\RitoWars\bin\Debug\RitoWars.exe.config
+C:\Users\Francisco Leal\Documents\GitHub\RitoWars-1\RitoWars\obj\Debug\RitoWars.csprojResolveAssemblyReference.cache
+C:\Users\Francisco Leal\Documents\GitHub\RitoWars-1\RitoWars\bin\Debug\RitoWars.exe
+C:\Users\Francisco Leal\Documents\GitHub\RitoWars-1\RitoWars\bin\Debug\RitoWars.pdb
+C:\Users\Francisco Leal\Documents\GitHub\RitoWars-1\RitoWars\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Francisco Leal\Documents\GitHub\RitoWars-1\RitoWars\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Francisco Leal\Documents\GitHub\RitoWars-1\RitoWars\obj\Debug\RitoWars.exe
+C:\Users\Francisco Leal\Documents\GitHub\RitoWars-1\RitoWars\obj\Debug\RitoWars.pdb

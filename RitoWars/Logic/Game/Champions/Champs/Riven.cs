@@ -2,18 +2,18 @@ using RitoWars.Logic.Game.Champions.Helpers;
 
 namespace RitoWars.Logic.Game.Champions.Champs
 {
-    public abstract class Ashe : BaseChamp
+    public abstract class Riven : BaseChamp
     {
         #region ChampData
         /// <summary>
         /// The champion name
         /// </summary>
-        public override string ChampName => "Ashe";
+        public override string ChampName => "Riven";
 
         /// <summary>
         /// The champion id
         /// </summary>
-        public override int ChampId => 22;
+        public override int ChampId => 92;
 
 #endregion ChampData
 
@@ -21,50 +21,50 @@ namespace RitoWars.Logic.Game.Champions.Champs
         /// <summary>
         /// The champion's base health at level one
         /// </summary>
-        public override double BaseHealth => 527.72;
+        public override double BaseHealth => 558.48;
 
         /// <summary>
         /// The champion's health gained for leveling up
         /// </summary>
-        public override double HealthLevel => 79;
+        public override double HealthLevel => 86;
 
         /// <summary>
         /// The champion's amount of health regen
         /// </summary>
-        public override double BaseHealthRegen => 5.42;
+        public override double BaseHealthRegen => 3.34;
 
         /// <summary>
         /// The champion's health regen gained for leveling up
         /// </summary>
-        public override double HealthRegenLevel => 0.55;
+        public override double HealthRegenLevel => 0.5;
         #endregion Health
 
         #region SecondaryBar
         /// <summary>
         /// The champion's <seealso cref="SecondaryBar"/> resource the champion has
         /// </summary>
-        public override SecondaryBar SecondaryBar => SecondaryBar.Mana;
+        public override SecondaryBar SecondaryBar => SecondaryBar.NoSecondaryBar;
 
         #region SecondaryBarData
         /// <summary>
         /// The champion's base <seealso cref="SecondaryBar"/> amount
         /// </summary>
-        public override double BaseSecondaryBarData => 231.8;
+        public override double BaseSecondaryBarData => 0;
 
         /// <summary>
         /// The champion's <seealso cref="SecondaryBar"/> amount gained for leveling up
         /// </summary>
-        public override double SecondaryBarDataLevel => 35;
+        public override double SecondaryBarDataLevel => 0;
 
         /// <summary>
         /// The champion's <seealso cref="SecondaryBar"/> base regen amount
         /// </summary>
-        public override double BaseSecondaryBarRegen => 6.97;
+        public override double BaseSecondaryBarRegen => 0;
 
         /// <summary>
         /// The champion's <seealso cref="SecondaryBar"/> regen amount gained for leveling up
         /// </summary>
-        public override double SecondaryBarRegenLevel => 0.4;
+        public override double SecondaryBarRegenLevel => 0;
         #endregion SecondaryBarData
         #endregion SecondaryBar
 
@@ -72,49 +72,49 @@ namespace RitoWars.Logic.Game.Champions.Champs
         /// <summary>
         /// The champion's base attack damage
         /// </summary>
-        public override double BaseAttackDamage => 51.088;
+        public override double BaseAttackDamage => 56.04;
 
         /// <summary>
         /// The champion's attack damage gained for leveling up
         /// </summary>
-        public override double AttackDamageLevel => 2.85;
+        public override double AttackDamageLevel => 3;
 
         /// <summary>
         /// The champion's base attack speed
         /// </summary>
-        public override double BaseAttackSpeed => 0.658; 
+        public override double BaseAttackSpeed => 0.625; 
 
         /// <summary>
         /// The champion's attack speed percent gained for leveling up
         /// </summary>
-        public override double AttackSpeedPercent => 3.33; 
+        public override double AttackSpeedPercent => 3.5; 
 
         /// <summary>
         /// The champion's auto attack range
         /// </summary>
-        public override double AutoAttackRange => 600; 
+        public override double AutoAttackRange => 125; 
         #endregion Attacks
 
         #region Defense
         /// <summary>
         /// The champion's base armor
         /// </summary>
-        public override double BaseArmor => 21.212;
+        public override double BaseArmor => 24.376;
 
         /// <summary>
         /// The champion's armor gained for leveling up
         /// </summary>
-        public override double ArmorLevel => 3.4;
+        public override double ArmorLevel => 3.2;
 
         /// <summary>
         /// The champion's base magic resist (for most champions is 30)
         /// </summary>
-        public override double BaseMagicResist => 30;
+        public override double BaseMagicResist => 32.1;
 
         /// <summary>
         /// The champion's magic resist gained for leveling up
         /// </summary>
-        public override double MagicResistLevel => 0;
+        public override double MagicResistLevel => 1.25;
         #endregion Defense
 
         #region CastingResource //--------------------------------------------------->NEED TO BE VERIFIED, ALL CHAMPS ARE CURRENTLY USING MANA :P
