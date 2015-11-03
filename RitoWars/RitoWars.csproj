@@ -50,6 +50,8 @@
     <Compile Include="Exceptions\ServerNotInitializedException.cs" />
     <Compile Include="Logic\Game\Champions\BaseChamp.cs" />
     <Compile Include="Logic\Game\Champions\Champs\Aatrox.cs" />
+    <Compile Include="Logic\Game\Champions\Champs\Annie.cs" />
+    <Compile Include="Logic\Game\Champions\Champs\Ashe.cs" />
     <Compile Include="Logic\Game\Champions\Helpers\CastingResource.cs" />
     <Compile Include="Logic\Game\Champions\Helpers\SecondaryBar.cs" />
     <Compile Include="Logic\Game\GameTypes\GameTypes.cs" />
