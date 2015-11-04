@@ -2,18 +2,18 @@ using RitoWars.Logic.Game.Champions.Helpers;
 
 namespace RitoWars.Logic.Game.Champions.Champs
 {
-    public abstract class Ashe : BaseChamp
+    public abstract class Vayne : BaseChamp
     {
         #region ChampData
         /// <summary>
         /// The champion name
         /// </summary>
-        public override string ChampName => "Ashe";
+        public override string ChampName => "Vayne";
 
         /// <summary>
         /// The champion id
         /// </summary>
-        public override int ChampId => 22;
+        public override int ChampId => 67;
 
 #endregion ChampData
 
@@ -21,12 +21,12 @@ namespace RitoWars.Logic.Game.Champions.Champs
         /// <summary>
         /// The champion's base health at level one
         /// </summary>
-        public override double BaseHealth => 527.72;
+        public override double BaseHealth => 498.44;
 
         /// <summary>
         /// The champion's health gained for leveling up
         /// </summary>
-        public override double HealthLevel => 79;
+        public override double HealthLevel => 83;
 
         /// <summary>
         /// The champion's amount of health regen
@@ -72,12 +72,12 @@ namespace RitoWars.Logic.Game.Champions.Champs
         /// <summary>
         /// The champion's base attack damage
         /// </summary>
-        public override double BaseAttackDamage => 51.088;
+        public override double BaseAttackDamage => 50.46;
 
         /// <summary>
         /// The champion's attack damage gained for leveling up
         /// </summary>
-        public override double AttackDamageLevel => 2.85;
+        public override double AttackDamageLevel => 3.25;
 
         /// <summary>
         /// The champion's base attack speed
@@ -87,19 +87,19 @@ namespace RitoWars.Logic.Game.Champions.Champs
         /// <summary>
         /// The champion's attack speed percent gained for leveling up
         /// </summary>
-        public override double AttackSpeedPercent => 3.33; 
+        public override double AttackSpeedPercent => 4; 
 
         /// <summary>
         /// The champion's auto attack range
         /// </summary>
-        public override double AutoAttackRange => 600; 
+        public override double AutoAttackRange => 550; 
         #endregion Attacks
 
         #region Defense
         /// <summary>
         /// The champion's base armor
         /// </summary>
-        public override double BaseArmor => 21.212;
+        public override double BaseArmor => 19.012;
 
         /// <summary>
         /// The champion's armor gained for leveling up

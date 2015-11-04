@@ -1,4 +1,4 @@
-﻿using RitoWars.Logic.Game.Champions.Helpers;
+using RitoWars.Logic.Game.Champions.Helpers;
 
 namespace RitoWars.Logic.Game.Champions.Champs
 {
@@ -15,7 +15,7 @@ namespace RitoWars.Logic.Game.Champions.Champs
         /// </summary>
         public override int ChampId => 1;
 
-        #endregion ChampData
+#endregion ChampData
 
         #region Health
         /// <summary>
@@ -82,17 +82,17 @@ namespace RitoWars.Logic.Game.Champions.Champs
         /// <summary>
         /// The champion's base attack speed
         /// </summary>
-        public override double BaseAttackSpeed => 0.579;
+        public override double BaseAttackSpeed => 0.579; 
 
         /// <summary>
         /// The champion's attack speed percent gained for leveling up
         /// </summary>
-        public override double AttackSpeedPercent => 1.00;
+        public override double AttackSpeedPercent => 1.36; 
 
         /// <summary>
         /// The champion's auto attack range
         /// </summary>
-        public override double AutoAttackRange => 575;
+        public override double AutoAttackRange => 575; 
         #endregion Attacks
 
         #region Defense
@@ -109,7 +109,7 @@ namespace RitoWars.Logic.Game.Champions.Champs
         /// <summary>
         /// The champion's base magic resist (for most champions is 30)
         /// </summary>
-        public override double BaseMagicResist => 30.0;
+        public override double BaseMagicResist => 30;
 
         /// <summary>
         /// The champion's magic resist gained for leveling up
@@ -117,7 +117,7 @@ namespace RitoWars.Logic.Game.Champions.Champs
         public override double MagicResistLevel => 0;
         #endregion Defense
 
-        #region CastingResource
+        #region CastingResource //--------------------------------------------------->NEED TO BE VERIFIED, ALL CHAMPS ARE CURRENTLY USING MANA :P
         /// <summary>
         /// The champion's <seealso cref="CastingResource"/> for using Q
         /// </summary>
