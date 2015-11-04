@@ -136,7 +136,7 @@ namespace RitoWars.Logic.Game.Champions.Champs
         /// <summary>
         /// The champion's <seealso cref="CastingResource"/> for using R
         /// </summary>
-        public override CastingResource R => CastingResource.Energy;
+        public override CastingResource R => CastingResource.EssenceOfShadow;
         #endregion CastingResource
     }
 }

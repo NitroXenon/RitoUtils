@@ -24,6 +24,18 @@
         Mana,
 
         /// <summary>
+        /// Champion uses their fury
+        /// <para>Example champ: Tryndamere with his Q</para>
+        /// </summary>
+        Fury,
+
+        /// <summary>
+        /// Champion uses their Essence Of Shadow
+        /// <para>ONLY champ: Akali</para>
+        /// </summary>
+        EssenceOfShadow,
+
+        /// <summary>
         /// Champion uses nothing
         /// <para>Example champ: Yasuo</para>
         /// </summary>
