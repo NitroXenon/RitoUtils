@@ -117,7 +117,7 @@ namespace RitoWars.Logic.Game.Champions.Champs
         public override double MagicResistLevel => 1.25;
         #endregion Defense
 
-        #region CastingResource //--------------------------------------------------->NEED TO BE VERIFIED, ALL CHAMPS ARE CURRENTLY USING MANA :P
+        #region CastingResource
         /// <summary>
         /// The champion's <seealso cref="CastingResource"/> for using Q
         /// </summary>
@@ -131,12 +131,12 @@ namespace RitoWars.Logic.Game.Champions.Champs
         /// <summary>
         /// The champion's <seealso cref="CastingResource"/> for using E
         /// </summary>
-        public override CastingResource E => CastingResource.Mana;
+        public override CastingResource E => CastingResource.Health;
 
         /// <summary>
         /// The champion's <seealso cref="CastingResource"/> for using R
         /// </summary>
-        public override CastingResource R => CastingResource.Mana;
+        public override CastingResource R => CastingResource.NoCastingResource;
         #endregion CastingResource
     }
 }
