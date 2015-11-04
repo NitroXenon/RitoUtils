@@ -6,11 +6,6 @@
     public enum SecondaryBar
     {
         /// <summary>
-        /// Yasuo secondary bar shows how much wind he has colected
-        /// <para>Only Yasuo</para>
-        /// </summary>
-        Wind,
-        /// <summary>
         /// Aatrox's secondary bar shows how much hp is in his bloodwell
         /// <para>Only Aatrox</para>
         /// </summary>

@@ -43,7 +43,7 @@ namespace RitoWars.Logic.Game.Champions.Champs
         /// <summary>
         /// The champion's <seealso cref="SecondaryBar"/> resource the champion has
         /// </summary>
-        public override SecondaryBar SecondaryBar => SecondaryBar.NoSecondaryBar;
+        public override SecondaryBar SecondaryBar => SecondaryBar.IronMan;
 
         #region SecondaryBarData
         /// <summary>
