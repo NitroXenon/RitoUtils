@@ -21,7 +21,7 @@ namespace RitoWars.Logic
         /// <summary>
         /// List of all developers
         /// </summary>
-        public static readonly string[] Devs = { "eddy5641" };
+        public static readonly string[] Devs = { "eddy5641", "TheWebs" };
 
         /// <summary>
         /// I love you Snowl
