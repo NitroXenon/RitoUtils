@@ -1,1 +1,14 @@
 #TODO
+- [x] Add all champs into database
+- [ ] Add all items into database
+- [ ] Add maps in
+  - [ ] Summoner's Rift
+  - [ ] The Twisted Treeline
+  - [ ] Howling Abyss
+  - [ ] The Crystal Scar
+- [ ] Add commands in
+  - [ ] Kill(string-PlayerName), Kill(double-PlayerId)
+  - [ ] Revive(string-PlayerName), Revive(double-PlayerName)
+  - [ ] Cooldown(double-CooldownTime, int-TargetSpellSlot, string-PlayerName), Cooldown(double-CooldownTime, int-TargetSpellSlot, double-PlayerId)
+  - [ ] BonusCooldownReduction(int-Percent, stirng-PlayerName), BonusCooldownReduction(int-Percent, stirng-PlayerId)
+- [ ] Get it to work
