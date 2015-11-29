@@ -13,7 +13,7 @@ Current status
 
 TODO
 ====
-[![TODO](https://img.shields.io/badge/TODO-undef-red.svg?style=flat-square)](hhttps://github.com/eddy5641/RitoUtils/blob/master/TODO.md)
+[![TODO](https://img.shields.io/badge/TODO-undef-red.svg?style=flat-square)](https://github.com/eddy5641/RitoUtils/blob/master/TODO.md)
 
 Licenses
 ========
