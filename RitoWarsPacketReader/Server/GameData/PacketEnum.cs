@@ -1,4 +1,4 @@
-﻿namespace RitoPacketReader.Server.GameData
+﻿namespace RitoWarsPacketReader.Server.GameData
 {
     enum GameCmd : uint
     {

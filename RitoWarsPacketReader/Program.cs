@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
-using RitoPacketReader.Server;
+using RitoWarsPacketReader.Server;
 
-namespace RitoPacketReader
+namespace RitoWarsPacketReader
 {
     class Program
     {

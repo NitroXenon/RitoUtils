@@ -55,7 +55,7 @@ using System;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace RitoPacketReader.Server
+namespace RitoWarsPacketReader.Server
 {
     public class BlowFish
     {

@@ -6,7 +6,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 
-namespace RitoPacketReader.Server
+namespace RitoWarsPacketReader.Server
 {
     public class GameInitializer
     {
