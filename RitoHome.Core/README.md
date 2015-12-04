@@ -1,3 +1,0 @@
-RitoHome.Core
-=============
-WIP
