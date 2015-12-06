@@ -24,6 +24,11 @@ namespace RitoWars.Logic.Json
         /// The player's champion id
         /// </summary>
         public int ChampId { get; set; }
+        
+        /// <summary>
+        /// The player's icon id
+        /// </summary>
+        public int IconId { get; set; }
 
         /// <summary>
         /// the team the player is on
